@@ -10,12 +10,12 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #444444;
 }
 
 a {
-  color: #e03a3c;
+  color: #F4BF21;
   text-decoration: none;
 }
 
@@ -24,13 +24,14 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+  h1{
+    font-family: 'Darumadrop One', cursive;}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -43,7 +44,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #e03a3c;
+  background: #F4BF21;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -95,7 +96,7 @@ h6 {
   margin: 0;
   padding: 0;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Darumadrop One', cursive;
 }
 
 #header .logo a {
@@ -115,7 +116,7 @@ h6 {
 --------------------------------------------------------------*/
 .get-started-btn {
   margin-left: 30px;
-  background: #e03a3c;
+  background: #F4BF21;
   color: #fff;
   border-radius: 4px;
   padding: 8px 25px;
@@ -372,47 +373,46 @@ h6 {
   padding-top: 82px;
 }
 
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 100px;
+  line-height: 70%;
   font-weight: 700;
   color: #fff;
 }
 
 #hero h2 {
   color: #fff;
-  margin: 10px 0 0 0;
+  margin: 22px 0 0 0;
   font-size: 24px;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  color: #000000;
+  background: #F4BF21;
+  border: 2px solid #F4BF21;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
 }
 
 #hero .btn-get-started:hover {
   background: transparent;
   border-color: #fff;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -483,7 +483,7 @@ section {
 
 .section-bg:before {
   content: "";
-  background: #1b1b1b;
+  background: #40664C;
   position: absolute;
   bottom: 60px;
   top: 60px;
@@ -650,15 +650,18 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding-top: 80px;
+  padding-top: 30px;
+  background-color: #40664C;
+  color: #ffffff;
 }
+
 
 .counts .count-box {
   padding: 30px 30px 25px 30px;
   width: 100%;
   position: relative;
   text-align: center;
-  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0);
   border-radius: 4px;
 }
 
@@ -674,24 +677,25 @@ section {
   color: #e03a3c;
   border-radius: 50px;
   border: 2px solid #fff;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0);
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .counts .count-box span {
-  font-size: 36px;
+  font-size: 15px;
   display: block;
   font-weight: 700;
-  color: #111111;
+  color: #F4BF21;
 }
 
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
