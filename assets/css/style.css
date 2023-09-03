@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #F4BF21;
+  color: #40664C;
   text-decoration: none;
 }
 
 a:hover {
-  color: #F4BF21;
+  color: #40664C;
   text-decoration: none;
 }
 
@@ -449,7 +449,7 @@ transform: skew(-20deg);
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 0px 0;
+  padding: 30px 0px;
   overflow: hidden;
   position: relative;
   background-color: #40664C;
@@ -1121,12 +1121,14 @@ section {
 
 .pricing .box {
   padding: 0px;
-  background: #FFF5DC;
+  background: #ffffff;
   text-align: center;
   border-radius: 8px;
+  
+  box-shadow: 0 0 10px #40664c4c;
   position: relative;
   overflow: hidden;
-  color: #253b2c;
+  color: #40664C;
 }
 
 .pricing .box h3 {
@@ -1142,7 +1144,7 @@ section {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   margin-bottom: 0px;
-  color: #253b2c;
+  color: #40664C;
 }
 
 .pricing .box h4 sup {
@@ -1274,6 +1276,7 @@ transform: skew(-20deg);
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
@@ -1325,6 +1328,7 @@ transform: skew(-20deg);
 
 .team .member .member-info {
   padding: 25px 15px;
+  
 }
 
 .team .member .member-info h4 {
@@ -1357,24 +1361,24 @@ transform: skew(-20deg);
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+background-image: url(https://img.freepik.com/free-photo/white-paper-texture_1194-2324.jpg?w=2000);
+  color: #40664C;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px 0 32px 0;
   border-radius: 4px;
 }
 
 .contact .info-box i {
   font-size: 32px;
-  color: #e03a3c;
+  color: #382929;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f8d4d5;
+  border: 2px dotted #000000;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: #000000;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1458,16 +1462,22 @@ transform: skew(-20deg);
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #e03a3c;
+  background: #F4BF21;
   border: 0;
   padding: 10px 32px;
-  color: #fff;
+  color: #000000;
   transition: 0.4s;
   border-radius: 4px;
+  border: 2px solid #F4BF21;
+-webkit-transform: skew(-20deg);
+-moz-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+transform: skew(-20deg);
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #e35052;
+  background: #40664C;
 }
 
 @keyframes animate-loading {
