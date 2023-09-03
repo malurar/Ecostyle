@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: 'Roboto', sans-serif;
-  color: #444444;
+  color: #ffffff;
 }
 
 a {
@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #e76668;
+  color: #F4BF21;
   text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ h6 {
 }
 
 #header .logo a span {
-  color: #e03a3c;
+  color: #F4BF21;
 }
 
 #header .logo img {
@@ -116,7 +116,7 @@ h6 {
 .get-started-btn {
   margin-left: 30px;
   background: #F4BF21;
-  color: #fff;
+  color: #40664C;
   border-radius: 4px;
   padding: 8px 25px;
   white-space: nowrap;
@@ -124,11 +124,20 @@ h6 {
   font-size: 14px;
   font-weight: 600;
   display: inline-block;
+  color: #000000;
+background: #F4BF21;
+border: 2px solid #F4BF21;
+-webkit-transform: skew(-20deg);
+-moz-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+transform: skew(-20deg);
 }
 
 .get-started-btn:hover {
-  background: #111111;
-  color: #fff;
+  background: #fff;
+  border: 2px solid #40664C
+  color  #fff ;
 }
 
 @media (max-width: 992px) {
@@ -185,7 +194,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #e03a3c;
+  color: #F4BF21;
 }
 
 .navbar .dropdown ul {
@@ -440,9 +449,10 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 0px 0;
   overflow: hidden;
   position: relative;
+  background-color: #40664C;
 }
 
 .section-title {
@@ -482,13 +492,13 @@ section {
 
 .section-bg:before {
   content: "";
-  background: #40664C;
+  background: #FFF5DC;
   position: absolute;
-  bottom: 60px;
-  top: 60px;
+  bottom: 30px;
+  top: 30px;
   left: 0;
   right: 0;
-  transform: skewY(-3deg);
+
 }
 
 /*--------------------------------------------------------------
@@ -576,11 +586,13 @@ section {
 }
 
 .about .content {
+  color: #40664C;
   padding: 30px 30px 30px 0;
 }
 
 .about .content h3 {
   font-weight: 700;
+  color: #40664C;
   font-size: 34px;
   margin-bottom: 30px;
 }
@@ -591,7 +603,7 @@ section {
 
 .about .content .about-btn {
   padding: 8px 30px 9px 30px;
-  color: #fff;
+  color: #40664C;
   border-radius: 50px;
   transition: 0.3s;
   text-transform: uppercase;
@@ -599,7 +611,7 @@ section {
   font-size: 13px;
   display: inline-flex;
   align-items: center;
-  border: 2px solid #e03a3c;
+  border: 2px solid #0d0d0d;
 }
 
 .about .content .about-btn i {
@@ -608,7 +620,7 @@ section {
 }
 
 .about .content .about-btn:hover {
-  background: #e35052;
+  background: #5066e3;
   background: #e03a3c;
 }
 
@@ -618,11 +630,12 @@ section {
 
 .about .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #e03a3c;
+  color: #40664C;
   margin-bottom: 10px;
 }
 
 .about .icon-boxes .icon-box h4 {
+  color: #40664C;
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
@@ -630,7 +643,7 @@ section {
 
 .about .icon-boxes .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: #40664C;
 }
 
 @media (max-width: 1200px) {
@@ -652,11 +665,12 @@ section {
   padding-top: 30px;
   background-color: #40664C;
   color: #ffffff;
+  
 }
 
 
 .counts .count-box {
-  padding: 30px 30px 25px 30px;
+  padding: 0px 0px 0px 0px;
   width: 100%;
   position: relative;
   text-align: center;
@@ -760,8 +774,8 @@ section {
 }
 
 .tabs .tab-pane h3 {
-  font-weight: 600;
-  font-size: 26px;
+  font-weight: 300;
+  font-size: 40px;
 }
 
 .tabs .tab-pane ul {
@@ -1104,13 +1118,15 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
 .pricing .box {
-  padding: 20px;
-  background: #2b2b2b;
+  padding: 0px;
+  background: #FFF5DC;
   text-align: center;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
+  color: #253b2c;
 }
 
 .pricing .box h3 {
@@ -1125,7 +1141,8 @@ section {
   font-size: 42px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  color: #253b2c;
 }
 
 .pricing .box h4 sup {
@@ -1158,7 +1175,7 @@ section {
 }
 
 .pricing .box ul .na {
-  color: rgba(255, 255, 255, 0.5);
+  color: #40664C;
   text-decoration: line-through;
 }
 
@@ -1171,18 +1188,26 @@ section {
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 4px;
-  color: #fff;
+  color: #40664C;
   transition: none;
   font-size: 14px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid #40664C;
+
+-webkit-transform: skew(-20deg);
+-moz-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+transform: skew(-20deg);
 }
 
 .pricing .box .btn-buy:hover {
-  border-color: #fff;
+  color: #fff;
+  background-color: #40664C;
+  
 }
 
 .pricing .featured {
