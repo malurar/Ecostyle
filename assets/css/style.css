@@ -1233,7 +1233,7 @@ transform: skew(-20deg);
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #e03a3c;
+  font-family: #F4BF21;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1258,11 +1258,11 @@ transform: skew(-20deg);
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: #F4BF21;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #e03a3c;
+  color: #F4BF21;
 }
 
 .faq .faq-list a.collapsed .icon-show {
