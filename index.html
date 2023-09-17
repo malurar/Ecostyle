@@ -433,6 +433,11 @@
           </div>
         </div>
  -->
+
+
+
+
+ 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -752,6 +757,10 @@
       </div>
     </section><!-- End Frequently Asked Questions Section -->
 
+
+
+
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
@@ -842,6 +851,59 @@
       </div>
     
     </section><!-- End Team Section -->
+
+<!-- carrusel -->
+<section class="carrusel">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div id="myCarousel" class="carousel slide multi-item-carousel" data-ride="carousel">
+          <!-- Imágenes del carrusel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="../Ecostyle/assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="Imagen 1">
+                </div>
+                <div class="col-md-4">
+                  <img src="../Ecostyle/assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="Imagen 2">
+                </div>
+                <div class="col-md-4">
+                  <img src="../Ecostyle/assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="Imagen 3">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="../Ecostyle/assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="Imagen 4">
+                </div>
+                <div class="col-md-4">
+                  <img src="../Ecostyle/assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="Imagen 5">
+                </div>
+                <div class="col-md-4">
+                  <img src="../Ecostyle/assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="Imagen 6">
+                </div>
+              </div>
+            </div>
+            <!-- Agrega más "carousel-item" según sea necesario -->
+          </div>
+
+         <!-- Agrega estas flechas personalizadas antes del cierre del carrusel -->
+<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+  <img src="../Ecostyle/assets/img/flecha izq.png" alt="Flecha Izquierda">
+</a>
+<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+  <img src="../Ecostyle/assets/img/flecha der.png" alt="Flecha Derecha">
+</a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</section>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -1003,6 +1065,24 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Incluye las bibliotecas de Bootstrap y jQuery antes de cerrar el </body> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Al hacer clic en la flecha izquierda, avanza al carrusel anterior
+    $(".carousel-control-prev").click(function() {
+      $("#myCarousel").carousel("prev");
+    });
+
+    // Al hacer clic en la flecha derecha, avanza al carrusel siguiente
+    $(".carousel-control-next").click(function() {
+      $("#myCarousel").carousel("next");
+    });
+  });
+</script>
 
 </body>
 

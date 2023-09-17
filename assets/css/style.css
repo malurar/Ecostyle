@@ -1490,6 +1490,69 @@ transform: skew(-20deg);
   bottom: 15px;
 }
 
+
+/*--------------------------------------------------------------
+# Carrusel
+--------------------------------------------------------------*/
+
+/* Estilos para la sección de carrusel */
+
+
+/* Estilos para la sección de carrusel */
+.carrusel {
+  padding: 50px 0; /* Ajusta el espacio vertical según sea necesario */
+  background-image: url('../img/fondito.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir toda la sección */
+  background-position: center; /* Alinea la imagen de fondo al centro */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  color: #fff; /* Cambia el color de texto según tu diseño */
+  margin-bottom: 50px;
+}
+}
+
+/* Estilos para las imágenes del carrusel */
+.carrusel img {
+  max-width: 100%;
+  height: auto;
+  width: 350px; /* Ajusta el ancho deseado */
+  height: 350px; /* Ajusta la altura deseada, asegurándote de que sea igual que el ancho */
+  object-fit: cover; /* Esto asegura que la imagen se ajuste al cuadro sin deformarla */
+  margin-top: 50px; /* Agrega margen superior para mover las imágenes hacia abajo */
+}
+
+/* Estilos para las flechas personalizadas */
+.carousel-control-prev,
+.carousel-control-next {
+  border: none; /* Sin borde */
+  width: auto; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Ajusta la altura según sea necesario */
+  position: absolute; /* Ajusta la posición según sea necesario */
+  top: 50%; /* Alinea verticalmente al centro */
+  transform: translateY(-50%); /* Alinea verticalmente al centro */
+  z-index: 1; /* Asegura que las flechas estén por encima de las imágenes */
+}
+
+/* Estilos para la imagen de flecha personalizada */
+.carousel-control-prev img,
+.carousel-control-next img {
+  max-width: 50px; /* Ajusta el ancho máximo de la imagen de flecha */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilos para la posición de las flechas */
+.carousel-control-prev {
+  left: -50px; /* Ajusta la posición de la flecha izquierda */
+}
+
+.carousel-control-next {
+  right: -50px; /* Ajusta la posición de la flecha derecha */
+}
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
