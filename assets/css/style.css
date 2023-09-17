@@ -387,8 +387,9 @@ transform: skew(-20deg);
 #hero h1 {
   margin: 0;
   font-size: 100px;
-  line-height: 70%;
+  line-height: 80%;
   font-weight: 700;
+  letter-spacing: 2px;
   color: #fff;
 }
 
@@ -450,10 +451,11 @@ transform: skew(-20deg);
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 10px 10px;
   overflow: hidden;
   position: relative;
-  background-color: #40664C;
+  background-image: url('../img/fondito\ verde.jpg');
+margin:0;
+padding: 0;
 }
 
 /* SECCION PORTFOLIO */
@@ -479,22 +481,9 @@ section.custom-background {
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
   position: relative;
 }
 
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #e03a3c;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
 
 .section-title p {
   margin-bottom: 0;
@@ -505,8 +494,10 @@ section.custom-background {
   padding: 0px 0;
   color: #40664C;
   background-color: #FFF5DC;
-  
+  background-image: none; /* Elimina la imagen de fondo solo en esta sección */
 }
+
+
 
 .section-bg:before {
   content: "";
@@ -577,11 +568,11 @@ section.custom-background {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #e03a3c;
+  border: 1px solid #F4BF21;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #e03a3c;
+  background-color: #F4BF21;
 }
 
 .clients .swiper-slide img {
@@ -742,6 +733,10 @@ section.custom-background {
   background-color: #FFF5DC; /* Cambia el color de fondo según tus preferencias */
 }
 
+.mi-seccion {
+  background-image: none; /* Elimina la imagen de fondo solo en esta sección */
+}
+
 /* Estilos para la imagen de fondo */
 .mi-seccion .image-container {
   position: relative;
@@ -771,13 +766,12 @@ section.custom-background {
 /* Estilo para el título verde */
 .titulo-verde {
   color: #40664C; /* Puedes ajustar este valor al color verde que desees */
-  font-size: 24px; /* Ajusta el tamaño de fuente según tus necesidades */
+  margin-top: 20px;
 }
 
 /* Estilo para el subtítulo verde */
 .subtitulo-verde {
   color: #40664C; /* Puedes ajustar este valor al color verde que desees */
-  font-size: 18px; /* Ajusta el tamaño de fuente según tus necesidades */
 }
 
 
@@ -1136,11 +1130,42 @@ section.custom-background {
 }
 
 /*--------------------------------------------------------------
+# quienes somos
+--------------------------------------------------------------*/
+
+
+/* Estilos personalizados para los encabezados */
+.custom-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #40664C; /* Cambia el color del texto según tus preferencias (verde en este caso) */
+}
+
+/* Estilos personalizados para los párrafos */
+.custom-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #40664C; /* Cambia el color del texto según tus preferencias */
+  width: 400px;
+}
+
+.custom-text-column {
+  margin-left: -300px; /* Ajusta el valor según sea necesario */
+  margin-top: -280px
+  
+}
+
+
+
+/*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
+  color: #40664C;
 }
 
 .testimonials .testimonial-item {
@@ -1151,7 +1176,7 @@ section.custom-background {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   position: relative;
   background: #fff;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1160,13 +1185,13 @@ section.custom-background {
   border: 6px solid #fff;
   float: left;
   margin: 0 10px 0 0;
+  border-radius: 50px;
 }
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
-  font-weight: bold;
   margin: 25px 0 5px 0;
-  color: #111;
+  color: #40664C;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1209,11 +1234,11 @@ section.custom-background {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #e03a3c;
+  border: 1px solid #F4BF21;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #e03a3c;
+  background-color: #F4BF21;
 }
 
 /*--------------------------------------------------------------
@@ -1230,6 +1255,7 @@ section.custom-background {
   position: relative;
   overflow: hidden;
   color: #40664C;
+  margin-bottom: 50px;
 }
 
 .pricing .box h3 {
@@ -1498,9 +1524,10 @@ background-image: url(https://img.freepik.com/free-photo/white-paper-texture_119
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 10px rgba(12, 12, 12, 0.918);
   padding: 30px;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .contact .php-email-form .error-message {
