@@ -1500,13 +1500,21 @@ transform: skew(-20deg);
 
 /* Estilos para la sección de carrusel */
 .carrusel {
-  padding: 50px 0; /* Ajusta el espacio vertical según sea necesario */
-  background-image: url('../img/fondito.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
+  padding-bottom: 50px;
+  background-image: url('../img/fondito.png'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
   background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir toda la sección */
   background-position: center; /* Alinea la imagen de fondo al centro */
   background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
   color: #fff; /* Cambia el color de texto según tu diseño */
-  margin-bottom: 50px;
+  
+}
+
+/* Estilos para el párrafo superpuesto */
+.carrusel h3 {
+  color: #40664C; /* Cambia el color de texto según tu diseño */
+  font-size: 30px; /* Cambia el tamaño de fuente según tus preferencias */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 10px; /* Espaciado interno para el párrafo */
 }
 
 
@@ -1516,8 +1524,8 @@ transform: skew(-20deg);
   height: auto;
   width: 350px; /* Ajusta el ancho deseado */
   height: 350px; /* Ajusta la altura deseada, asegurándote de que sea igual que el ancho */
-  object-fit: cover; /* Esto asegura que la imagen se ajuste al cuadro sin deformarla */
-  margin-top: 50px; /* Agrega margen superior para mover las imágenes hacia abajo */
+  object-fit: contain; /* Esto asegura que la imagen se ajuste al cuadro sin deformarla */
+  position: relative;
 }
 
 /* Estilos para las flechas personalizadas */
@@ -1527,7 +1535,7 @@ transform: skew(-20deg);
   width: auto; /* Ajusta el ancho según sea necesario */
   height: auto; /* Ajusta la altura según sea necesario */
   position: absolute; /* Ajusta la posición según sea necesario */
-  top: 50%; /* Alinea verticalmente al centro */
+  top: 70%; /* Alinea verticalmente al centro */
   transform: translateY(-50%); /* Alinea verticalmente al centro */
   z-index: 1; /* Asegura que las flechas estén por encima de las imágenes */
 }
@@ -1549,7 +1557,16 @@ transform: skew(-20deg);
 }
 
 
+/* Estilos para el párrafo dentro del carrusel */
+.parrafo-carrusel {
+  color: #fff; /* Cambia el color de texto según tu diseño */
+  margin-top: 150px; /* Ajusta el margen superior para centrar verticalmente el párrafo */
+}
 
+/* Alinea el párrafo al centro horizontalmente */
+.parrafo-carrusel {
+  text-align: center;
+}
 
 
 
