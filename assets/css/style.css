@@ -10,9 +10,12 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
   color: #ffffff;
-  background-color: #FFF5DC;
+  background-color: #EEEDEB;
+  line-height: 1.3;
+  
 }
 
 a {
@@ -25,13 +28,36 @@ a:hover {
   text-decoration: none;
 }
 
-  h1,h3 {
-    font-family: 'Darumadrop One', cursive;}
-h2,
-h4,
-h5,
+h1 {
+  font-family: 'Darumadrop One', cursive;
+}
+
+h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 50px;
+}
+h3 {
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+h4{
+  font-family: 'Fredoka', sans-serif;
+text-align: center;
+text-transform: uppercase;
+font-weight: lighter;
+letter-spacing: 2px;
+font-size: 20px;
+}
+h5{
+  font-family: 'Fredoka', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+
+}
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -58,7 +84,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #e65d5f;
+  background: #40664C;
   color: #fff;
 }
 
@@ -95,8 +121,8 @@ h6 {
   font-size: 30px;
   margin: 0;
   padding: 0;
-  font-weight: 600;
-  font-family: 'Darumadrop One', cursive;
+  font-weight: 300;
+  font-family: 'Darumadrop One';
 }
 
 #header .logo a {
@@ -122,8 +148,8 @@ h6 {
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   display: inline-block;
   color: #000000;
 background: #F4BF21;
@@ -376,7 +402,7 @@ transform: skew(-20deg);
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center no-repeat;
+  background: url("../img/hero-bg.png") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 82px;
@@ -388,20 +414,22 @@ transform: skew(-20deg);
   margin: 0;
   font-size: 100px;
   line-height: 80%;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 400;
   color: #fff;
 }
 
 #hero h2 {
   color: #fff;
   margin: 22px 0 0 0;
-  font-size: 24px;
+  font-size: 35px;
+  font-weight: 200;
+  line-height: 1;
+
 }
 
 #hero .btn-get-started {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
   font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
@@ -409,7 +437,7 @@ transform: skew(-20deg);
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #000000;
+  color: #40664C;
   background: #F4BF21;
   border: 2px solid #F4BF21;
   -webkit-transform: skew(-20deg);
@@ -453,9 +481,28 @@ transform: skew(-20deg);
 section {
   overflow: hidden;
   position: relative;
-  background-image: url('../img/fondito\ verde.jpg');
+  background-image: url('../img/Texturelabs_Paper_286L.png');
 margin:0;
 padding: 0;
+}
+
+
+
+/* Estilo para la seccion de gif completo */
+.seccion-fondo-completo {
+  background-image: url(../img/fondomovimiento.gif);
+  background-size: 90%; /* La imagen de fondo se ajustará para cubrir todo el contenido de la sección */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center; /* Alinea la imagen de fondo al centro */
+  width: 100vw;
+  height: auto;
+  display: block;
+
+}
+
+.seccion-fondo-completo .container {
+  padding: 300px 0; /* Añade relleno para separar el contenido de los bordes de la sección */
+  margin-bottom: 400px;
 }
 
 /* SECCION PORTFOLIO */
@@ -471,6 +518,8 @@ section.custom-background {
   text-align: center;
   padding-bottom: 30px;
   position: relative;
+  background-image: none;
+
 }
 
 .texto-amarillo-negrita {
@@ -479,21 +528,22 @@ section.custom-background {
 }
 
 .section-title h2 {
+  font-family: 'Fredoka', sans-serif;;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: medium;
   position: relative;
 }
 
 
 .section-title p {
   margin-bottom: 0;
+  background-image: none;
 }
 
 .section-bg {
   margin-top: 50px;
   padding: 0px 0;
   color: #40664C;
-  background-color: #FFF5DC;
   background-image: none; /* Elimina la imagen de fondo solo en esta sección */
 }
 
@@ -501,7 +551,6 @@ section.custom-background {
 
 .section-bg:before {
   content: "";
-  background: #FFF5DC;
   position: absolute;
   bottom: 30px;
   top: 30px;
@@ -667,16 +716,112 @@ section.custom-background {
   }
 }
 
+
+
+/*--------------------------------------------------------------
+# Autoras
+--------------------------------------------------------------*/
+
+
+.autoras .container {
+  position: relative;
+
+
+}
+
+.autoras .content {
+  margin-top: 100px;
+  margin-right: 150px;
+  color: #40664C;
+}
+
+.autoras h3 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.autoras h4 {
+text-align: left;
+
+}
+
+.autoras .content p {
+  margin-bottom: 30px;
+}
+
+.autoras .content .autoras-btn {
+  padding: 8px 30px 9px 30px;
+  color: #40664C;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #0d0d0d;
+}
+
+.autoras .content .autoras-btn i {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.autoras .content .autoras-btn:hover {
+  background: #5066e3;
+  background: #e03a3c;
+}
+
+.autoras .icon-boxes .icon-box {
+  margin-top: 30px;
+}
+
+.autoras .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #40664C;
+  margin-bottom: 10px;
+}
+
+.autoras .icon-boxes .icon-box h4 {
+  color: #40664C;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.autoras .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #40664C;
+}
+
+@media (max-width: 1200px) {
+  .autoras .content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .autoras {
+    text-align: center;
+  }
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts {
   padding-top: 20px ;
-  padding-bottom: 20px;
-  background-color: #40664C;
-  color: #ffffff;
+  padding-bottom: 50px;
+  color: #40664C;
+  background-image: none;
   
 }
+
+
+
 
 
 .counts .count-box {
@@ -706,18 +851,18 @@ section.custom-background {
 }
 
 .counts .count-box span {
-  font-size: 17px;
+  font-size: 20px;
   display: block;
-  font-weight: 500;
-  color: #F4BF21;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #ffffff;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 
@@ -728,51 +873,18 @@ section.custom-background {
 
 
 /* Estilos para la sección "mi-seccion" */
-.mi-seccion {
-  padding: 50px 0; /* Ajusta el espacio vertical según sea necesario */
-  background-color: #FFF5DC; /* Cambia el color de fondo según tus preferencias */
-}
+
+
+
 
 .mi-seccion {
   background-image: none; /* Elimina la imagen de fondo solo en esta sección */
+  width: 100%; /* Ocupa todo el ancho de la ventana del navegador */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente en la pantalla */
 }
 
-/* Estilos para la imagen de fondo */
-.mi-seccion .image-container {
-  position: relative;
-}
-
-.mi-seccion .image-container img {
-  max-width: 70%; /* Ajusta el tamaño de la imagen de fondo según sea necesario */
-  height: auto;
-}
-
-/* Estilos para el contenedor de superposición del GIF */
-.mi-seccion .gif-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2; /* Asegura que el GIF esté por encima de la imagen de fondo */
-}
-
-/* Estilos para el GIF animado */
-.mi-seccion .gif-image {
-  max-width: 50%; /* Ajusta el ancho máximo del GIF según sea necesario */
-  height: auto;
-}
-
-/* Estilo para el título verde */
-.titulo-verde {
-  color: #40664C; /* Puedes ajustar este valor al color verde que desees */
-  margin-top: 20px;
-}
-
-/* Estilo para el subtítulo verde */
-.subtitulo-verde {
-  color: #40664C; /* Puedes ajustar este valor al color verde que desees */
-}
 
 
 
@@ -796,13 +908,15 @@ section.custom-background {
   max-width: 100%; /* Puedes ajustar el valor del ancho máximo según tus necesidades */
   margin: 0 auto; /* Esto centra la caja horizontalmente en el contenedor padre */
   margin-left: 200px; /* Esto mueve la caja hacia la derecha agregando un margen izquierdo automático */
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 300px;
 }
 
 .imagen-proporcionada {
-  max-width: 70%; /* Asegura que la imagen no supere el ancho del contenedor */
-  margin-right: -100px; /* Mueve la imagen más cerca del texto ajustando el margen izquierdo */
-  margin-bottom: 50px; /* Agrega un margen inferior de 20px para separar la imagen del contenido de abajo */
+  max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+  margin-left: -100px; /* Mueve la imagen más cerca del texto ajustando el margen izquierdo */
+  margin-bottom: 100px; /* Agrega un margen inferior de 20px para separar la imagen del contenido de abajo */
+  margin-top: 100px;
   padding: 100px;
 }
 
@@ -1136,16 +1250,15 @@ section.custom-background {
 
 /* Estilos personalizados para los encabezados */
 .custom-heading {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 30px;
   margin-bottom: 10px;
-  text-transform: uppercase;
   color: #40664C; /* Cambia el color del texto según tus preferencias (verde en este caso) */
+  margin-top: 200px;
 }
 
 /* Estilos personalizados para los párrafos */
 .custom-paragraph {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   color: #40664C; /* Cambia el color del texto según tus preferencias */
   width: 400px;
@@ -1166,7 +1279,10 @@ section.custom-background {
 .testimonials .testimonials-slider {
   overflow: hidden;
   color: #40664C;
+  background-image: none;
 }
+
+
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -1179,13 +1295,23 @@ section.custom-background {
   border-radius: 0px;
 }
 
+.testimonials h3 {
+  color: #40664C;
+}
+
+.testimonials h4 {
+  color: #40664C;
+  margin-top: 100px;
+}
+
+
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 10px;
   border: 6px solid #fff;
   float: left;
   margin: 0 10px 0 0;
-  border-radius: 50px;
+  border-radius: 0px;
 }
 
 .testimonials .testimonial-item h3 {
@@ -1202,7 +1328,7 @@ section.custom-background {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #fceaea;
+  color: #F4BF21;
   font-size: 26px;
 }
 
@@ -1227,6 +1353,8 @@ section.custom-background {
 .testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  background-image: none;
+
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
@@ -1241,16 +1369,25 @@ section.custom-background {
   background-color: #F4BF21;
 }
 
+
+.sin-fondo {
+  background-image: none;
+  background-color: transparent; /* Añade esto para asegurarte de que el fondo sea transparente */
+  margin: 0;
+  padding: 0;
+  color: #40664C;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
-# Pricing
+# Suscripciones / Pricing
 --------------------------------------------------------------*/
 
 .pricing .box {
   padding: 0px;
   background: #ffffff;
   text-align: center;
-  border-radius: 8px;
-  
+  border-radius: 0px;  
   box-shadow: 0 0 10px #40664c4c;
   position: relative;
   overflow: hidden;
@@ -1258,32 +1395,7 @@ section.custom-background {
   margin-bottom: 50px;
 }
 
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
-.pricing .box h4 {
-  font-size: 42px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 0px;
-  color: #40664C;
-}
-
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  font-size: 16px;
-  font-weight: 300;
-}
 
 .pricing .box ul {
   padding: 0;
@@ -1299,7 +1411,7 @@ section.custom-background {
 
 
 .pricing .box ul i {
-  color: #F4BF21;
+  color: #EEEDEB;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1318,14 +1430,13 @@ section.custom-background {
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 4px;
-  color: #40664C;
+  background-color: #F4BF21;
   transition: none;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-weight: 600;
   transition: 0.3s;
-  border: 2px solid #40664C;
 
 -webkit-transform: skew(-20deg);
 -moz-transform: skew(-20deg);
@@ -1335,13 +1446,17 @@ transform: skew(-20deg);
 }
 
 .pricing .box .btn-buy:hover {
-  color: #fff;
-  background-color: #40664C;
+  color: #40664C;
+  background-color: #ffffff;
+  border: 2px solid #40664C;
+
   
 }
 
 .pricing .featured {
-  background: #F4BF21;
+  background: #EEEDEB;
+  border: 10px solid #F4BF21;
+
 }
 
 .pricing .box img {
@@ -1501,21 +1616,13 @@ transform: skew(-20deg);
 /* Estilos para la sección de carrusel */
 .carrusel {
   padding-bottom: 50px;
-  background-image: url('../img/fondito.png'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
-  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir toda la sección */
-  background-position: center; /* Alinea la imagen de fondo al centro */
-  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-  color: #fff; /* Cambia el color de texto según tu diseño */
+  background: none;
+  color: #40664C; /* Cambia el color de texto según tu diseño */
+  margin-bottom: 200px;
   
 }
 
-/* Estilos para el párrafo superpuesto */
-.carrusel h3 {
-  color: #40664C; /* Cambia el color de texto según tu diseño */
-  font-size: 30px; /* Cambia el tamaño de fuente según tus preferencias */
-  text-align: center; /* Alinea el texto al centro */
-  padding: 10px; /* Espaciado interno para el párrafo */
-}
+
 
 
 /* Estilos para las imágenes del carrusel */
@@ -1579,6 +1686,20 @@ background-image: url(https://img.freepik.com/free-photo/white-paper-texture_119
   text-align: center;
   padding: 30px 0 32px 0;
   border-radius: 4px;
+}
+
+.contact h3 {
+  color: #40664C;
+}
+
+.contact h4 {
+  color: #40664C;
+  margin-top: 50px;
+}
+
+.contact-sin-fondo {
+  background-image: none;
+  background-color: transparent;
 }
 
 .contact .info-box i {
@@ -1703,6 +1824,8 @@ transform: skew(-20deg);
     transform: rotate(360deg);
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Blog
