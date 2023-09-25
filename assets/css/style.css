@@ -539,7 +539,6 @@ section.custom-background {
 }
 
 .section-bg {
-  margin-top: 50px;
   padding: 0px 0;
   color: #40664C;
   background-image: none; /* Elimina la imagen de fondo solo en esta sección */
@@ -736,8 +735,6 @@ em {
 
 .autoras .container {
   position: relative;
-
-
 }
 
 .autoras .content {
