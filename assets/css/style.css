@@ -110,6 +110,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  font-size: 20px;
 }
 
 #header.header-scrolled {
@@ -142,8 +143,6 @@ h6 {
 --------------------------------------------------------------*/
 .get-started-btn {
   margin-left: 30px;
-  background: #F4BF21;
-  color: #40664C;
   border-radius: 4px;
   padding: 8px 25px;
   white-space: nowrap;
@@ -151,7 +150,7 @@ h6 {
   font-size: 20px;
   font-weight: 500;
   display: inline-block;
-  color: #000000;
+  color: #40664C;
 background: #F4BF21;
 border: 2px solid #F4BF21;
 -webkit-transform: skew(-20deg);
@@ -164,7 +163,6 @@ transform: skew(-20deg);
 .get-started-btn:hover {
   background: #fff;
   border: 2px solid #40664C
-  color  #fff ;
 }
 
 @media (max-width: 992px) {
@@ -182,6 +180,7 @@ transform: skew(-20deg);
 */
 .navbar {
   padding: 0;
+  font-size: 20px;
 }
 
 .navbar ul {
@@ -202,10 +201,9 @@ transform: skew(-20deg);
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  color: #111111;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  color: #40664C;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -429,8 +427,8 @@ transform: skew(-20deg);
 
 #hero .btn-get-started {
   font-family: 'Fredoka', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 28px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
