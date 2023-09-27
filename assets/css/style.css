@@ -10,7 +10,9 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Fredoka', sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: 20px;
   color: #ffffff;
   background-color: #EEEDEB;
@@ -29,35 +31,39 @@ a:hover {
 }
 
 h1 {
-  font-family: 'Darumadrop One', cursive;
+  font-family: 'Inika', serif;
 }
 
 h2 {
-  font-family: 'Fredoka', sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 50px;
+
+  
 }
 h3 {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Inika', serif;
   text-align: center;
   font-size: 40px;
+  color: #1c3c26;
 }
 
 h4{
-  font-family: 'Fredoka', sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
 text-align: center;
 text-transform: uppercase;
-font-weight: lighter;
 letter-spacing: 2px;
-font-size: 20px;
+font-size: 18px;
+font-weight: 300;
+color: #777777;
 }
 h5{
-  font-family: 'Fredoka', sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 25px;
   text-transform: uppercase;
 
 }
 h6 {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Inika', serif;
 }
 
 /*--------------------------------------------------------------
@@ -201,7 +207,7 @@ transform: skew(-20deg);
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 20px;
   color: #40664C;
   white-space: nowrap;
@@ -410,7 +416,7 @@ transform: skew(-20deg);
 
 #hero h1 {
   margin: 0;
-  font-size: 100px;
+  font-size: 130px;
   line-height: 80%;
   font-weight: 400;
   color: #fff;
@@ -420,22 +426,21 @@ transform: skew(-20deg);
   color: #fff;
   margin: 22px 0 0 0;
   font-size: 35px;
-  font-weight: 200;
-  line-height: 1;
+  font-weight: 300;
 
 }
 
 #hero .btn-get-started {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
+  font-family: "aktiv-grotesk", sans-serif;
+font-weight: bold;
+  font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #40664C;
+  color: #294231;
   background: #F4BF21;
   border: 2px solid #F4BF21;
   -webkit-transform: skew(-20deg);
@@ -443,6 +448,7 @@ transform: skew(-20deg);
   -ms-transform: skew(-20deg);
   -o-transform: skew(-20deg);
   transform: skew(-20deg);
+  font-style: normal; /* Agregamos esta línea para quitar la cursiva */
 }
 
 #hero .btn-get-started:hover {
@@ -482,6 +488,8 @@ section {
   background-image: url('../img/Texturelabs_Paper_286L.png');
 margin:0;
 padding: 0;
+margin-top: 100px;
+color: #fff;
 }
 
 
@@ -489,19 +497,22 @@ padding: 0;
 /* Estilo para la seccion de gif completo */
 .seccion-fondo-completo {
   background-image: url(../img/fondomovimiento.gif);
-  background-size: 90%; /* La imagen de fondo se ajustará para cubrir todo el contenido de la sección */
   background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
   background-position: center; /* Alinea la imagen de fondo al centro */
   width: 100vw;
   height: auto;
-  display: block;
+
 
 }
-
 .seccion-fondo-completo .container {
-  padding: 300px 0; /* Añade relleno para separar el contenido de los bordes de la sección */
-  margin-bottom: 400px;
+  padding: 430px 0; /* Añade relleno para separar el contenido de los bordes de la sección */
+  height: auto; 
 }
+
+
+
+
+
 
 /* SECCION PORTFOLIO */
 section.custom-background {
@@ -526,7 +537,7 @@ section.custom-background {
 }
 
 .section-title h2 {
-  font-family: 'Fredoka', sans-serif;;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 32px;
   font-weight: medium;
   position: relative;
@@ -559,6 +570,21 @@ em {
   right: 0;
 
 }
+
+/* Regla CSS para la sección "propuesta" */
+.propuesta {
+  background-image: none; /* Elimina el fondo */
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+
+
+/* Regla CSS para la sección "autoras" con fondo blanco */
+.autoras {
+  background-color: #fff; /* Establece el fondo blanco */
+}
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -609,23 +635,23 @@ em {
 # Clients
 --------------------------------------------------------------*/
 #clients.clients {
-  margin-top: 100px;
+  margin-top: 150px;
   background-image: none; /* Elimina la imagen de fondo solo en esta sección */
   /* Otros estilos que desees aplicar a esta sección */
+ 
 }
 
 .clients .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 50px;
   position: relative;
   
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #F4BF21;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
@@ -647,6 +673,7 @@ em {
 # About
 --------------------------------------------------------------*/
 .about .container {
+  margin-top: 140px;
   position: relative;
   z-index: 10;
 }
@@ -735,12 +762,14 @@ em {
 
 .autoras .container {
   position: relative;
+  width: 1100px;
 }
 
 .autoras .content {
-  margin-top: 100px;
-  margin-right: 150px;
+  margin-top: 90px;
+  margin-right: 130px;
   color: #40664C;
+  line-height: 1.5;
 }
 
 .autoras h3 {
@@ -753,9 +782,7 @@ text-align: left;
 
 }
 
-.autoras .content p {
-  margin-bottom: 30px;
-}
+.autoras .content p 
 
 .autoras .content .autoras-btn {
   padding: 8px 30px 9px 30px;
@@ -821,8 +848,8 @@ text-align: left;
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding-top: 20px ;
-  padding-bottom: 50px;
+  margin-top: 50px;
+  padding-bottom: 0px;
   color: #40664C;
   background-image: none;
   
@@ -833,7 +860,7 @@ text-align: left;
 
 
 .counts .count-box {
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 20px;
   width: 100%;
   position: relative;
   text-align: center;
@@ -861,16 +888,19 @@ text-align: left;
 .counts .count-box span {
   font-size: 20px;
   display: block;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Inika', serif;
+
 }
 
 .counts .count-box p {
-  padding: 0;
+  padding: 0px;
   margin: 0;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 20px;
+  
+    font-size: 20px;
   text-align: center;
+  color: #243f2c;
+  
 }
 
 
@@ -887,11 +917,8 @@ text-align: left;
 
 .mi-seccion {
   background-image: none; /* Elimina la imagen de fondo solo en esta sección */
-  width: 100%; /* Ocupa todo el ancho de la ventana del navegador */
-  height: auto; /* Mantiene la proporción original de la imagen */
-  display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
-  margin: 0 auto; /* Centra la imagen horizontalmente en la pantalla */
 }
+
 
 
 
@@ -1355,6 +1382,8 @@ text-align: left;
 
 .testimonials .testimonial-item p {
   font-style: italic;
+  font-size: 20px;
+  font-weight: 300;
   margin: 30px auto 15px auto;
 }
 
@@ -1366,11 +1395,10 @@ text-align: left;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #F4BF21;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
@@ -1395,7 +1423,7 @@ text-align: left;
   padding: 0px;
   background: #ffffff;
   text-align: center;
-  border-radius: 0px;  
+  border-radius: 0px;
   box-shadow: 0 0 10px #40664c4c;
   position: relative;
   overflow: hidden;
@@ -1403,6 +1431,20 @@ text-align: left;
   margin-bottom: 50px;
 }
 
+
+#pricing h5 {
+  color: #fff;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+
+
+}
+
+#pricing h3 {
+  color: #fff; /* Reemplaza 'tu-otro-color-aqui' con el color que desees para h3 */
+
+}
 
 
 .pricing .box ul {
@@ -1442,7 +1484,7 @@ text-align: left;
   transition: none;
   font-size: 20px;
   font-weight: 400;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 
@@ -1467,9 +1509,20 @@ transform: skew(-20deg);
 
 }
 
+.pricing .box .box-image {
+  position: absolute;
+  top: -50px; /* Ajusta la posición vertical según tus necesidades */
+  left: 50%; /* Centra la imagen horizontalmente en el div */
+  transform: translateX(-50%); /* Centra la imagen horizontalmente en el div */
+  z-index: 2; /* Coloca la imagen sobre la caja */
+}
+
 .pricing .box img {
-  max-width: 200px; /* Cambia el valor para ajustar el tamaño máximo deseado */
+  max-width: 500px; /* Cambia el valor para ajustar el tamaño máximo deseado */
   height: auto;
+  width: 100%;
+  position: relative;
+  z-index: 1; /* Ajusta el índice z para que esté debajo de la imagen */
 }
 
 /*--------------------------------------------------------------
@@ -1623,13 +1676,27 @@ transform: skew(-20deg);
 
 /* Estilos para la sección de carrusel */
 .carrusel {
+  margin-top: 100px;
   padding-bottom: 50px;
   background: none;
   color: #40664C; /* Cambia el color de texto según tu diseño */
   margin-bottom: 50px;
-  
+  text-align: center;
 }
 
+
+/* Estilos para textito de carrusel */
+
+.image-text {
+  text-align: center;
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.image-text p {
+  text-align: center;
+  font-size: 20px;
+  color: #333; /* Color de texto */
+}
 
 
 
@@ -1849,12 +1916,15 @@ transform: skew(-20deg);
 --------------------------------------------------------------*/
 .blog {
   padding: 40px 0 20px 0;
+  background-color: #eee;
+  background-image: none;
 }
 
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  color: #40664C;
 }
 
 .blog .entry .entry-img {
@@ -2384,7 +2454,7 @@ transform: skew(-20deg);
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
 }
 
 #footer .footer-top h4 {
@@ -2403,6 +2473,7 @@ transform: skew(-20deg);
   background: #F4BF21;
   bottom: 0;
   left: 0;
+  
 }
 
 #footer .footer-top .footer-links {
