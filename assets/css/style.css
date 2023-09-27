@@ -20,6 +20,15 @@ font-style: normal;
   
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+    /* Otros estilos que desees aplicar en pantallas más pequeñas */
+  }
+}
+
+
+
 a {
   color: #40664C;
   text-decoration: none;
@@ -296,7 +305,7 @@ transform: skew(-20deg);
 */
 .mobile-nav-toggle {
   color: #111111;
-  font-size: 28px;
+  font-size: 30px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -351,14 +360,15 @@ transform: skew(-20deg);
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 20px;
   color: #111111;
+  font-weight: 400;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #e03a3c;
+  color: #F4BF21;
 }
 
 .navbar-mobile .getstarted,
@@ -393,7 +403,7 @@ transform: skew(-20deg);
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #e03a3c;
+  color: #F4BF21;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -460,16 +470,18 @@ font-weight: bold;
 @media (max-width: 768px) {
   #hero {
     text-align: center;
-    padding-top: 58px;
+    padding-top: 500px;
+    background-image: url('../img/hero-bg_mobile.png');
+    background-image: cover;
   }
 
   #hero h1 {
-    font-size: 28px;
+    font-size: 80px;
   }
 
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 30px;
+    font-weight: 400;
   }
 }
 
@@ -488,7 +500,7 @@ section {
   background-image: url('../img/Texturelabs_Paper_286L.png');
 margin:0;
 padding: 0;
-margin-top: 100px;
+margin-top: 0px;
 color: #fff;
 }
 
@@ -590,25 +602,31 @@ em {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 15px 0;
-  background: #2b2b2b;
+  padding: 0px 0;
+  background-image: none;
   min-height: 40px;
-  margin-top: 82px;
+  margin-top: 150px;
   color: #fff;
+  margin-left: 30px;
 }
 
-.breadcrumbs h2 {
-  font-size: 28px;
+.breadcrumbs h3 {
+  text-align: left;
+  font-size: 30px;
   font-weight: 500;
+  color: #243f2c;
 }
 
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0 0 10px 0;
+  padding: 0 0 0px 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #243f2c;
+  
 }
 
 .breadcrumbs ol a {
@@ -616,7 +634,7 @@ em {
 }
 
 .breadcrumbs ol a:hover {
-  color: #fff;
+  color: #40664C;
   transition: 0.3s;
 }
 
@@ -627,7 +645,7 @@ em {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #e03a3c;
+  color: #243f2c;
   content: "/";
 }
 
@@ -668,6 +686,8 @@ em {
   opacity: 1;
   filter: none;
 }
+
+
 
 /*--------------------------------------------------------------
 # About
@@ -750,6 +770,10 @@ em {
 @media (max-width: 768px) {
   .about {
     text-align: center;
+
+  
+
+  
   }
 }
 
@@ -852,9 +876,16 @@ text-align: left;
   padding-bottom: 0px;
   color: #40664C;
   background-image: none;
+  align-items: center;
   
 }
 
+#metodos-de-pago .row {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  margin-bottom: 60px;
+}
 
 
 
@@ -924,7 +955,7 @@ text-align: left;
 
 
 /*--------------------------------------------------------------
-# Tabs
+# Tabs / PROPUESTA
 --------------------------------------------------------------*/
 
 
@@ -947,12 +978,22 @@ text-align: left;
   margin-bottom: 300px;
 }
 
+@media (max-width: 768px) {
+  .caja-flex {
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-top: 0px; /* Ajusta el margen superior según tus necesidades */
+    margin-bottom: 90px; /* Elimina el margen inferior o ajusta según sea necesario */
+    max-width: 100%; /* Esto asegura que el contenido se ajuste al ancho del contenedor */
+  }
+}
+
 .imagen-proporcionada {
   max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
   margin-left: -100px; /* Mueve la imagen más cerca del texto ajustando el margen izquierdo */
   margin-bottom: 100px; /* Agrega un margen inferior de 20px para separar la imagen del contenido de abajo */
   margin-top: 100px;
-  padding: 100px;
+  padding: 100%;
 }
 
 .tabs .nav-link {
@@ -1419,9 +1460,17 @@ text-align: left;
 # Suscripciones / Pricing
 --------------------------------------------------------------*/
 
+#pricing {
+  min-height: 100vh; /* Establece una altura mínima igual a la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .pricing .box {
   padding: 0px;
-  background: #ffffff;
+  background: #EEEDEB;
   text-align: center;
   border-radius: 0px;
   box-shadow: 0 0 10px #40664c4c;
@@ -1433,18 +1482,27 @@ text-align: left;
 
 
 #pricing h5 {
-  color: #fff;
+  color: #40664C;
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 500px;
   text-transform: uppercase;
+  margin-top: 50px;
 
 
 }
+
+#pricing h4 {
+color: #F4BF21;
+
+}
+
 
 #pricing h3 {
   color: #fff; /* Reemplaza 'tu-otro-color-aqui' con el color que desees para h3 */
 
 }
+
 
 
 .pricing .box ul {
@@ -1497,7 +1555,7 @@ transform: skew(-20deg);
 
 .pricing .box .btn-buy:hover {
   color: #40664C;
-  background-color: #ffffff;
+  background-color: #EEEDEB;
   border: 2px solid #40664C;
 
   
@@ -1523,6 +1581,198 @@ transform: skew(-20deg);
   width: 100%;
   position: relative;
   z-index: 1; /* Ajusta el índice z para que esté debajo de la imagen */
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# box premium pagina detalle
+--------------------------------------------------------------*/
+/* Estilos para la sección "box-premium" */
+.box-premium {
+  background-image: none;
+  background-color: #EEEDEB; /* Cambia el color de fondo según tus preferencias */
+  text-align: left;
+  border-radius: 0px;
+  position: relative;
+  overflow: hidden;
+  color: #40664C; /* Cambia el color de texto según tus preferencias */
+  width: auto;
+
+
+}
+
+/* Estilos personalizados para los encabezados en la sección "box-premium" */
+.box-premium .custom-heading {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #1c3c26; /* Cambia el color del texto según tus preferencias (verde en este caso) */
+  margin-top: 220px; /* Ajusta el margen superior según sea necesario */
+  width: auto;
+text-align: left;
+margin-left: 50px;
+}
+
+/* Estilos personalizados para los párrafos en la sección "box-premium" */
+.box-premium .custom-paragraph {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #40664C; /* Cambia el color del texto según tus preferencias */
+  width: auto;
+  margin-left: 50px;
+}
+
+/* Estilos para la imagen dentro de la sección "box-premium" */
+.box-premium img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+  height: auto;
+}
+
+/* Estilos para la columna de texto personalizado en la sección "box-premium" */
+.box-premium .custom-text-column {
+  margin-left: -300px; /* Ajusta el margen izquierdo según sea necesario */
+  margin-top: -280px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+
+.box-premium .btn-buy {
+  display: inline-block;
+  padding: 10px 40px 12px 40px;
+  border-radius: 4px;
+  background-color: #F4BF21;
+  transition: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+
+-webkit-transform: skew(-20deg);
+-moz-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+transform: skew(-20deg);
+}
+
+
+
+.box-premium .btn-buy:hover {
+  color: #40664C;
+  background-color: #EEEDEB;
+  border: 2px solid #40664C;
+
+  
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Caracteristicas box pagina detalle
+--------------------------------------------------------------*/
+
+/* Estilos para la sección "Características de Box" */
+#caracteristicas-de-box {
+background-color: #fff;
+padding-top: 50px;
+  text-align: center; /* Alinea el contenido al centro si es necesario */
+  /* Otros estilos según tus necesidades */
+}
+
+
+
+#caracteristicas-de-box .container {
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Estilos para la imagen en la sección #caracteristicas-de-box */
+#caracteristicas-de-box .caracteristicas-imagen {
+  max-width: 100%; /* Hace que la imagen sea responsiva y se ajuste al ancho del contenedor padre */
+  display: block; /* Evita espacios no deseados debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente en su contenedor */
+  padding: 0px; /* Agrega un espacio alrededor de la imagen si es necesario */
+  margin-bottom: 20px;
+}
+
+#caracteristicas-de-box .content {
+  color: #40664C;
+  
+}
+
+#caracteristicas-de-box .content h3 {
+  font-weight: 300;
+  color: #1c3c26;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#caracteristicas-de-box .content p {
+  margin-bottom: 30px;
+}
+
+#caracteristicas-de-box .content .about-btn {
+  padding: 8px 30px 9px 30px;
+  color: #40664C;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #0d0d0d;
+}
+
+#caracteristicas-de-box .content .about-btn i {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+#caracteristicas-de-box .content .about-btn:hover {
+  background: #5066e3;
+  background: #e03a3c;
+}
+
+#caracteristicas-de-box .icon-boxes .icon-box {
+  margin-top: 30px;
+}
+
+#caracteristicas-de-box .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #40664C;
+  margin-bottom: 10px;
+}
+
+#caracteristicas-de-box .icon-boxes .icon-box h4 {
+  color: #40664C;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+
+}
+
+#caracteristicas-de-box .icon-boxes .icon-box p {
+  font-size: 20px;
+  color: #40664C;
+}
+
+@media (max-width: 1200px) {
+  #caracteristicas-de-box .content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #caracteristicas-de-box {
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1749,6 +1999,47 @@ transform: skew(-20deg);
 .parrafo-carrusel {
   text-align: center;
 }
+
+
+/* Estilos para el carrusel en dispositivos móviles */
+@media (max-width: 768px) {
+ /* .carrusel.mobile {
+     Estilos para dispositivos móviles aquí 
+  }*/
+  
+  /* Oculta el carrusel de escritorio en dispositivos móviles */
+  .carrusel.desktop {
+    display: none;
+  }
+}
+
+/* Estilos para el carrusel en escritorio */
+@media (min-width: 769px) {
+ /*  .carrusel.desktop {
+    Estilos para escritorio aquí
+  } */
+  
+  /* Oculta el carrusel para móviles en escritorio */
+  .carrusel.mobile {
+    display: none;
+  }
+}
+  
+  .carousel-inner .carousel-item {
+    flex: 0 0 100%; /* Establece el ancho de cada elemento al 100% */
+    max-width: 100%; /* Asegura que las imágenes se ajusten al contenedor */
+  }
+  
+  .carousel-inner .carousel-item.active {
+    display: block; /* Muestra solo una imagen activa */
+  }
+  
+  /* Estilos adicionales para la versión móvil */
+  .carrusel {
+    text-align: center;
+  }
+
+
 
 
 
