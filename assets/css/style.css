@@ -20,6 +20,14 @@ font-style: normal;
   
 }
 
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+    /* Otros estilos que desees aplicar en pantallas más pequeñas */
+  }
+}
+
 a {
   color: #40664C;
   text-decoration: none;
@@ -464,16 +472,14 @@ font-weight: bold;
   }
 
   #hero h1 {
-    font-size: 28px;
+    font-size: 81px;
   }
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
   }
-}
 
-@media (max-height: 500px) {
   #hero {
     height: 120vh;
   }
@@ -501,9 +507,25 @@ color: #fff;
   background-position: center; /* Alinea la imagen de fondo al centro */
   width: 100vw;
   height: auto;
-
-
 }
+
+@media (max-width: 768px) {
+  .seccion-fondo-completo {
+    background-image: url(../img/fondomovimientomobile.gif); 
+    /* Otros estilos que desees aplicar en pantallas más pequeñas */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center; /* Alinea la imagen de fondo al centro */
+    width: auto;
+    height: auto;
+    margin-top:auto;
+    margin-bottom: auto;
+    padding: 100px; /* Añade relleno para separar el contenido de los bordes de la sección */
+
+  }
+  
+}
+
+
 .seccion-fondo-completo .container {
   padding: 430px 0; /* Añade relleno para separar el contenido de los bordes de la sección */
   height: auto; 
@@ -831,14 +853,39 @@ text-align: left;
 
 @media (max-width: 1200px) {
   .autoras .content {
-    padding-right: 0;
-  }
+margin-left: auto;
+margin-right: auto;  }
 }
 
 @media (max-width: 768px) {
   .autoras {
     text-align: center;
+    align-items: center;
+  
   }
+
+  .autoras .container {
+    position: relative;
+    width: auto;
+  }
+
+  .autoras h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .autoras h4 {
+  text-align: center;
+  
+  }
+
+  .autoras .content {
+    color: #40664C;
+    line-height: 1.5;
+  }
+
+  
+
 }
 
 
