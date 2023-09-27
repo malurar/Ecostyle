@@ -1596,7 +1596,7 @@ transform: skew(-20deg);
   background-image: none;
   background-color: #EEEDEB; /* Cambia el color de fondo según tus preferencias */
   text-align: left;
-  border-radius: 0px;
+  border-radius: 1px;
   position: relative;
   overflow: hidden;
   color: #40664C; /* Cambia el color de texto según tus preferencias */
