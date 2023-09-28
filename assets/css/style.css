@@ -20,17 +20,7 @@ font-style: normal;
   
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 16px; /* Cambia el tamaño de fuente para pantallas más pequeñas */
-    /* Otros estilos que desees aplicar en pantallas más pequeñas */
-  }
 
-  p {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
 
 
 
@@ -80,6 +70,36 @@ h6 {
   font-family: 'Inika', serif;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+    /* Otros estilos que desees aplicar en pantallas más pequeñas */
+  }
+
+  p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+  }
+  h3 {
+    font-family: 'Inika', serif;
+    text-align: center;
+    font-size: 25px;
+    color: #1c3c26;
+  }
+
+  h4{
+    font-family: "aktiv-grotesk", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #777777;
+
+}
+
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -431,7 +451,7 @@ transform: skew(-20deg);
 
 #hero h1 {
   margin: 0;
-  font-size: 130px;
+  font-size: 110px;
   line-height: 80%;
   font-weight: 400;
   color: #fff;
@@ -481,11 +501,11 @@ font-weight: bold;
   }
 
   #hero h1 {
-    font-size: 80px;
+    font-size: 50px;
   }
 
   #hero h2 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
   }
 }
@@ -984,14 +1004,14 @@ text-align: left;
 .counts .count-box p {
   padding: 0px;
   margin: 0;
-  
-    font-size: 20px;
+  font-size: 20px;
   text-align: center;
   color: #243f2c;
   
 }
 
 @media (max-width: 768px) {
+
   .counts {
     text-align: center;
    
@@ -1009,7 +1029,7 @@ text-align: left;
 
       margin-left:50px; 
       margin-right: 50px;     
-        font-size: 20px;
+        font-size: 16px;
       text-align: center;
       color: #243f2c;
       line-height: 1.5;
@@ -1026,9 +1046,10 @@ text-align: left;
     }
 
 
+  }
 
-
-    }
+    
+  
 /*--------------------------------------------------------------
 # GIFCITO
 --------------------------------------------------------------*/
@@ -1585,10 +1606,10 @@ line-height: 1.5;
 
 #pricing h5 {
   color: #40664C;
-  font-family: "aktiv-grotesk", sans-serif;
+  font-family: "Inika", sans-serif;
   font-size: 30px;
   font-weight: 500px;
-  text-transform: uppercase;
+  text-transform: none;
   margin-top: 50px;
 
 
@@ -1605,6 +1626,16 @@ color: #F4BF21;
 
 }
 
+.pricing .box p {
+  font-size: 17px;
+}
+
+.pricing .box p span {
+  font-size: 20px;
+font-weight: 300;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
 
 
 .pricing .box ul {
@@ -1647,7 +1678,6 @@ color: #F4BF21;
   font-family: "aktiv-grotesk", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-
 -webkit-transform: skew(-20deg);
 -moz-transform: skew(-20deg);
 -ms-transform: skew(-20deg);
@@ -1696,6 +1726,38 @@ transform: skew(-20deg);
   flex: 1;
   margin: 10px; /* Ajusta el margen entre las cajas según sea necesario */
 }
+
+
+@media (max-width: 768px) {
+  /* Estilos personalizados para los párrafos en la sección "box-premium" */
+  .pricing .box img {
+    max-width: 300px; /* Cambia el valor para ajustar el tamaño máximo deseado */
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ajusta el índice z para que esté debajo de la imagen */
+  }
+
+  .pricing .box h5 {
+    margin-bottom: 0px;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
 
 
 
@@ -2930,6 +2992,13 @@ transform: skew(-20deg);
   background: #40664C;
 }
 
+#footer .footer-top h3 {
+  color: #fff;
+  text-align: left;
+  font-family: 'Darumadrop One';
+
+}
+
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #232323;
@@ -3086,3 +3155,48 @@ transform: skew(-20deg);
   color: #40664C;
   text-decoration: none;
 }
+
+
+
+@media (max-width: 768px) {
+  
+
+
+
+#footer .footer-top h3 {
+  color: #fff;
+  text-align: center;
+  font-family: 'Darumadrop One';
+}
+
+#footer .footer-top .footer-links {
+display: none;
+}
+
+
+#footer .footer-newsletter h4 {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  color: #F4BF21;
+}
+
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+
+#footer .footer-newsletter {
+  font-size: 16px;
+  text-align: center;
+}
+
+#footer p {
+  text-align: center;
+}
+
+
+  }
