@@ -1689,6 +1689,7 @@ transform: skew(-20deg);
 .equal-height-boxes {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .equal-height-boxes .box {
