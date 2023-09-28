@@ -22,7 +22,7 @@ font-style: normal;
 
 @media (max-width: 768px) {
   body {
-    font-size: 20px; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+    font-size: 16px; /* Cambia el tamaño de fuente para pantallas más pequeñas */
     /* Otros estilos que desees aplicar en pantallas más pequeñas */
   }
 
