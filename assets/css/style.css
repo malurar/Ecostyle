@@ -523,6 +523,24 @@ color: #fff;
 
 
 
+@media (max-width: 768px) {
+ .seccion-fondo-completo {
+
+  background-image: url(../img/fondomovimientomobile.gif);
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center; /* Alinea la imagen de fondo al centro */
+  width: 100vw;
+  height: auto;
+  }
+
+  .seccion-fondo-completo .container {
+    padding: 600px; /* Añade relleno para separar el contenido de los bordes de la sección */
+    height: auto; 
+
+
+
+}
+
 
 
 
@@ -853,16 +871,46 @@ text-align: left;
   color: #40664C;
 }
 
-@media (max-width: 1200px) {
-  .autoras .content {
-    padding-right: 0;
-  }
-}
 
 @media (max-width: 768px) {
   .autoras {
     text-align: center;
   }
+
+  .autoras .container {
+    align-items: center;
+    width: auto;
+  }
+  
+  .autoras .content {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #40664C;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .autoras h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .autoras h4 {
+  text-align: center;
+  margin-top: 40px;
+  
+  }
+
+  #autoras .row {
+    flex-direction: column-reverse; /* Invierte la dirección de flexbox en móvil */
+  }
+
+  #autoras .col-lg-6 {
+    order: 2; /* Cambia el orden de la columna de imagen en móvil */
+  }
+  
+}
 }
 
 
