@@ -1566,6 +1566,7 @@ line-height: 1.5;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .pricing .box {
@@ -1578,6 +1579,7 @@ line-height: 1.5;
   overflow: hidden;
   color: #40664C;
   margin-bottom: 50px;
+  
 }
 
 
@@ -1714,6 +1716,18 @@ transform: skew(-20deg);
 
 }
 
+.box-premium h3 {
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.box-premium p {
+
+margin-left: 200px;
+padding-right: 200px;
+}
+
 /* Estilos personalizados para los encabezados en la sección "box-premium" */
 .box-premium .custom-heading {
   font-size: 30px;
@@ -1765,6 +1779,9 @@ margin-left: 50px;
 -ms-transform: skew(-20deg);
 -o-transform: skew(-20deg);
 transform: skew(-20deg);
+
+margin-left: 100px;
+margin-right: 100px;
 }
 
 
@@ -1789,9 +1806,55 @@ transform: skew(-20deg);
 }
 }
 
+@media (max-width: 768px) {
+  /* Estilos personalizados para los párrafos en la sección "box-premium" */
 
+.box-premium h3 {
+  margin-top: 250px;
+  text-align: center;
+  margin-left: 300px;
+  margin-top:0 px;
+}
 
+.box-premium p {
+  margin-top: 10px;
+margin-left: 290px;
+padding-right: 60px;
+padding-left: 60px;
+text-align: center;
+line-height: 1.5;
+}
 
+.box-premium img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+  height: auto;
+margin-left: 20px;
+}
+
+.box-premium .btn-buy {
+  display: inline-block;
+  padding: 10px 40px 12px 40px;
+  border-radius: 4px;
+  background-color: #F4BF21;
+  transition: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+
+-webkit-transform: skew(-20deg);
+-moz-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+transform: skew(-20deg);
+
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 50px;
+}
+
+}
 
 /*--------------------------------------------------------------
 # Caracteristicas box pagina detalle
