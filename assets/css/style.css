@@ -1107,6 +1107,15 @@ margin-left: 50px;
 line-height: 1.5;
 
   }
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .tab-pane img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen para dispositivos móviles */
+  }
+}
+
 }
 
 .imagen-proporcionada {
@@ -2523,9 +2532,11 @@ transform: skew(-20deg);
   order: 2; /* Cambia el orden de visualización */
 }
 
-/* Reduce el tamaño de la imagen */
-.col-lg-6 img {
-display: none;
+/* Oculta la imagen en dispositivos móviles */
+@media (max-width: 768px) {
+  .ocultar-en-mobile {
+    display: none;
+  }
 }
 
 
